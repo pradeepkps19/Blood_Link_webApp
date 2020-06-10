@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Blood Link
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="logo">
+            <!-- <h2>every drop counts <br /> donate blood </h2> -->
+        </div>
+        <div class="register">
+            <form class="form" id="signInForm" action="#" method="POST">
+                <h3>Existing user?</h3>
+                <input v-model="userId" type="number" id="signinID" class="field_input" name="mobile"
+                    placeholder="Mobile" />
+                <input v-model="password" type="password" id="signinPWD" class="field_input" name="password"
+                    placeholder="Password" />
+                <button type="submit" id="registerButton" name="Signin" class="field_input"
+                    value="Register">SignIn</button>
+            </form>
+            <form class="form" id="registerForm" action="#" method="POST">
+                <h3>New user?</h3>
+                <input v-model="name" type="text" id="nameInput" class="field_input" name="name"
+                    placeholder="Enter your name" required />
+                <input v-model="dob" type="date" id="birthInput" class="field_input" name="dob"
+                    placeholder="Date of birth" required />
+                <select v-model="bloodtype" id="bloodtype" name="bloodtype" class="field_input" required>
+                    <option value="select">-- Select your blood type --</option>
+                    <option value="O Positive">O Positive</option>
+                    <option value="O Negative">O Negative</option>
+                    <option value="A Positive">A Positive</option>
+                    <option value="A Negative">A Negative</option>
+                </select>
+                <input v-model="mobile" type="number" id="mobileInput" class="field_input" name="mobile"
+                    placeholder="Mobile" required />
+                <select id="cityInput" name="city" class="field_input" required>
+                    <option value="select">-- Select your city --</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                </select>
+                <input v-model="pwd" type="password" id="passwordInput" class="field_input" name="password"
+                    placeholder="Password" required />
+                <input v-model="confirmPwd" type="password" id="confirmInput" class="field_input" name="Name"
+                    placeholder="Confirm password" required />
+                <button type="submit" id="registerButton" name="Register" class="field_input"
+                    value="Register">Register</button>
+
+            </form>
+        </div>
+        </form>
+    </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
