@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCFCU8Yz7-lnnV1BUlgR0LKFTWvW5EqopI",
-    authDomain: "blood-bank-73a87.firebaseapp.com",
-    databaseURL: "https://blood-bank-73a87.firebaseio.com",
-    projectId: "blood-bank-73a87",
-    storageBucket: "blood-bank-73a87.appspot.com",
-    messagingSenderId: "179399551526",
-    appId: "1:179399551526:web:00e2fd8a17a69a874bd4e7",
-    measurementId: "G-SQYKWMSVJV"
+    apiKey: "enter your firebase api",
+    authDomain: "xyzproject.firebaseapp.com",
+    databaseURL: "link.firebaseio.com",
+    projectId: "....",
+    storageBucket: "....appspot.com",
+    messagingSenderId: "zxcbmxnzv",
+    appId: "xcvc",
+    measurementId: "...."
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
